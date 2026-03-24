@@ -4,7 +4,6 @@ import com.auction.server.model.enums.UserRole;
 import java.time.LocalDateTime;
 
 public class Bidder extends User {
-
   private double balance;
 
   public Bidder() {
@@ -49,11 +48,11 @@ public class Bidder extends User {
 
   @Override
   public String toString() {
-    return "Bidder{id=" + getId() 
-        + ", username='" + getUsername() + '\'' 
-        + ", email='" + getEmail() + '\'' 
-        + ", balance=" + balance 
-        + ", createdAt=" + getCreatedAt() 
+    return "Bidder{id=" + getId()
+        + ", username='" + getUsername() + '\''
+        + ", email='" + getEmail() + '\''
+        + ", balance=" + balance
+        + ", createdAt=" + getCreatedAt()
         + "}";
   }
 }
