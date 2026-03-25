@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class Seller extends User {
 
   private String shopName;
-  private double rating;
+  private double rating; // đánh giá khách hàng về người bán
 
   public Seller() {
     super();
