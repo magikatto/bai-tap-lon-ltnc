@@ -40,3 +40,8 @@ jobs:
         working-directory: auction-server
         run: mvn clean package -DskipTests
         # Kiểm tra xem code có bị lỗi cú pháp gạch đỏ không
+
+      - name: Chạy Unit Test (JUnit)
+        working-directory: auction-server
+        run: mvn test
+        # Tự động chạy toàn bộ test JUnit mỗi lần push
