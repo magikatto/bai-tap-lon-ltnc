@@ -47,9 +47,11 @@ public class AutoBidStrategy implements BidStrategy {
   }
 
   private void validateAmount(Auction auction, long nextBid) {
-
     if (auction.getCurrentPrice() >= maxBid) {
       throw new InvalidBidException("Auto-bid limit reached!");
+    }
+    if (nextBid <= auction.getCurrentPrice()) {
+      throw new InvalidBidException("Next bid must be higher than the current price!");
     }
   }
 
